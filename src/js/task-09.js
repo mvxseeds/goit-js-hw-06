@@ -1,4 +1,4 @@
-refs = {
+const refs = {
   colorBtn: document.querySelector('.change-color'),
   colorSpan: document.querySelector('.color'),
 };
