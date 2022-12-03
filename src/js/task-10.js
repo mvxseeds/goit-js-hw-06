@@ -26,11 +26,7 @@ function createBoxes(amount) {
   amount = Number(amount);
   const boxSizes = Array.from({length: amount}, (v, k) => k * 10 + 30);
 
-  const boxesMarkup = boxSizes
-        .map(makeDivMarkup)
-        .join('');
-
-  console.log(boxesMarkup);
+  const boxesMarkup = boxSizes.map(makeDivMarkup).join('');
 
   refs.boxContainer.insertAdjacentHTML('beforeend', boxesMarkup);
 }
